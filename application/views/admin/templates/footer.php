@@ -5,7 +5,7 @@
     <!-- Modals -->
 
     <!-- Add Page -->
-    <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <form>
@@ -45,8 +45,12 @@
   </div>
 </div>
 
+<!-- Add Post -->
+
+
   <script>
      CKEDITOR.replace( 'editor1' );
+     CKEDITOR.replace( 'editor2' );
  </script>
 
     <!-- Bootstrap core JavaScript
@@ -56,3 +60,5 @@
     <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+

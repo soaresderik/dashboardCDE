@@ -29,6 +29,7 @@
             <li><a href="<?php echo base_url(); ?>CDEAdmin/pages">Pages</a></li>
             <li><a href="<?php echo base_url(); ?>CDEAdmin/posts">Posts</a></li>
             <li><a href="<?php echo base_url(); ?>CDEAdmin/users">Users</a></li>
+            <li><a href="<?php echo base_url(); ?>CDEAdmin/escrever">Escrever</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Welcome, Brad</a></li>
@@ -52,7 +53,7 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                 <li><a type="button" data-toggle="modal" data-target="#addPage">Add Page</a></li>
-                <li><a href="#">Add Post</a></li>
+                <li><a type="button" data-toggle="modal" data-target="#addPost">Add Post</a></li>
                 <li><a href="#">Add User</a></li>
               </ul>
             </div>
@@ -66,5 +67,7 @@
         <ol class="breadcrumb">
           <li class="active">Dashboard</li>
         </ol>
+        <?php echo validation_errors(); ?>
       </div>
+
     </section>
