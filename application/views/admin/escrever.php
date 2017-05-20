@@ -1,8 +1,5 @@
 
  <div class="col-md-9">
-  <div class="panel panel-default">
-     
-
       <?php echo form_open('CDEAdmin/escrever'); ?>
       <div class="modal-header">
         <h4><?php echo $title; ?></h4>
@@ -30,8 +27,8 @@
         </div>
         <button type="submit" class="btn btn-primary">Publicar</button>
     </form>
-        </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+  </div>
+</section>
 

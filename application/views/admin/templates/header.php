@@ -25,14 +25,14 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="<?php echo base_url(); ?>CDEAdmin">Dashboard</a></li>
+            <li><a href="<?php echo base_url(); ?>CDEAdmin">Dashboard</a></li>
             <li><a href="<?php echo base_url(); ?>CDEAdmin/pages">Pages</a></li>
             <li><a href="<?php echo base_url(); ?>CDEAdmin/posts">Posts</a></li>
             <li><a href="<?php echo base_url(); ?>CDEAdmin/users">Users</a></li>
             <li><a href="<?php echo base_url(); ?>CDEAdmin/escrever">Escrever</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Welcome, Brad</a></li>
+            <li><a href="#">Bem-vindo, André</a></li>
             <li><a href="<?php echo base_url(); ?>login.html">Logout</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -43,7 +43,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10">
-            <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Your Site</small></h1>
+            <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Gerencie seu site</small></h1>
           </div>
           <div class="col-md-2">
             <div class="dropdown create">
@@ -52,8 +52,6 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a type="button" data-toggle="modal" data-target="#addPage">Add Page</a></li>
-                <li><a type="button" data-toggle="modal" data-target="#addPost">Add Post</a></li>
                 <li><a href="#">Add User</a></li>
               </ul>
             </div>
@@ -71,3 +69,4 @@
       </div>
 
     </section>
+
