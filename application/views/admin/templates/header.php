@@ -30,8 +30,10 @@
             <li><a href="<?php echo base_url(); ?>CDEAdmin/posts">Posts</a></li>
             <li><a href="<?php echo base_url(); ?>CDEAdmin/users">Users</a></li>
             <li><a href="<?php echo base_url(); ?>CDEAdmin/escrever">Escrever</a></li>
+
           </ul>
           <ul class="nav navbar-nav navbar-right">
+          <li><a href="<?php echo base_url(); ?>CDEAdmin/create">Criar Usuário</a></li>
             <li><a href="#">Bem-vindo, André</a></li>
             <li><a href="<?php echo base_url(); ?>login.html">Logout</a></li>
           </ul>
