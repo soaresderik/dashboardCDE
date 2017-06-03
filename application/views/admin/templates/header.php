@@ -32,6 +32,7 @@
             <li><a href="<?php echo base_url(); ?>CDEAdmin/escrever">Escrever</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="<?php echo base_url(); ?>users/register">Cadastrar Usuário</a></li>
             <li><a href="#">Welcome, Brad</a></li>
             <li><a href="<?php echo base_url(); ?>login.html">Logout</a></li>
           </ul>
@@ -67,7 +68,24 @@
         <ol class="breadcrumb">
           <li class="active">Dashboard</li>
         </ol>
-        <?php echo validation_errors(); ?>
+        
       </div>
 
+      <?php if(validation_errors()): ?>
+        <div class="alert alert-danger" role="alert">
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <span class="sr-only">Error:</span>
+          <?php echo validation_errors(); ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if($this->session->flashdata('user_registered')): ?>
+        <?php echo '<p class="alert alert-success">'. $this->session->flashdata('user_registered') .'</p>'; ?>
+      <?php endif; ?>
+
+      <?php if($this->session->flashdata('post_created')): ?>
+        <?php echo '<p class="alert alert-success">'. $this->session->flashdata('post_created') .'</p>'; ?>
+      <?php endif; ?>
     </section>
+
+    

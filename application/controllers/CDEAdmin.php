@@ -44,8 +44,12 @@ class CDEAdmin extends CI_Controller{
 		}else{
 
 				$this->post_model->criar_post();
-				redirect('blog');
+				$this->session->set_flashdata('post_created', 'Você criou um post!');
+				redirect('posts');
+				
 		}
+
+		
 	}
 
 
