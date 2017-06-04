@@ -1,3 +1,4 @@
+
           <div class="col-md-9">
             <!-- Website Overview -->
             <div class="panel panel-default">
@@ -18,30 +19,14 @@
                         <th>Created</th>
                         <th></th>
                       </tr>
+                      <?php foreach($posts as $post): ?>
                       <tr>
-                        <td>Blog Post 1</td>
+                        <td><?php echo $post['title']; ?></td>
                         <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 12, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                        <td><?php echo $post['created_at']; ?></td>
+                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="<?php echo base_url(); ?>CDEAdmin/deletar/<?php echo $post['id']; ?>">Delete</a></td>
                       </tr>
-                      <tr>
-                        <td>Blog Post 2</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 3</td>
-                        <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-                        <td>Dec 13, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
-                      <tr>
-                        <td>Blog Post 4</td>
-                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                        <td>Dec 14, 2016</td>
-                        <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
-                      </tr>
+                    <?php endforeach; ?>
                     </table>
               </div>
               </div>

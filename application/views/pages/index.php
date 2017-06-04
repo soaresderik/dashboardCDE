@@ -7,7 +7,7 @@
           <h5 class="header col s12 light"  style="text-shadow: 2px 2px 6px #000;">Quem investe em código não precisa contar com a sorte!</h5>
         </div>
         <div class="row center">
-          <a href="www.youtube.com/channel/UCsaZv7dlu8737N0e44kX66w" class="btn-large waves-effect waves-light teal lighten-1">Canal</a>
+          <a href="http://www.youtube.com/channel/UCsaZv7dlu8737N0e44kX66w" class="btn-large waves-effect waves-light teal lighten-1">Canal</a>
           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Blog</a>
         </div>
         <br><br>
